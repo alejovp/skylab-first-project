@@ -16,7 +16,7 @@ body {
     color: white;
 }
 
-.dataDrink {
+section.dataDrink {
     width: 70%;
     background-color: white;
     height: 300px;
