@@ -2,14 +2,22 @@
 
   .config(function ($routeProvider) {
     $routeProvider
+
       .when('/', {
         templateUrl: 'templates/displayList.html',
         controller: 'AlcoholicDrinks'
       })
+
       .when('/alcoholics', {
         templateUrl: 'templates/displayList.html',
         controller: 'AlcoholicDrinks'
       })
+
+      .when('/noAlcoholics', {
+        template: '<ul class="list-group"><li ng-repeat="drink in drinksList | filter:userInput" type="button" class="list-group-item list-inline col-md-4">{{drink.strDrink}}</li></ul>',
+        controller: 'NoAlcoholicsDrinks'
+      })
+
       .when('/drink/:id', {
         templateUrl: 'templates/displayDetail.html',
         controller: 'DetailController'
@@ -18,8 +26,4 @@
       //   template: '<ul class="list-group"><li ng-repeat="drink in drinksList | filter:userInput" type="button" class="list-group-item list-inline col-md-4">{{drink.strDrink}}</li></ul>',
       //   controller: 'AlcoholicDrinks'
       // })
-      .when('/noAlcoholics', {
-        template: '<ul class="list-group"><li ng-repeat="drink in drinksList | filter:userInput" type="button" class="list-group-item list-inline col-md-4">{{drink.strDrink}}</li></ul>',
-        controller: 'NoAlcoholicsDrinks'
-      })
   })

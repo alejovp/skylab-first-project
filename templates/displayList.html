@@ -1,3 +1,10 @@
+<div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input ng-model="userInput" type="text" class="form-control" placeholder="Search for...">
+      </div>
+    </div>
+</div>
 <ul class="list-group">
     <li ng-repeat="drink in drinksList | filter:userInput" type="button" class="list-group-item list-inline col-md-12">
       <!-- <p>{{ drink.strDrink }}</p> -->
