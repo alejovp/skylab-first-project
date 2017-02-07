@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Javascript API QR Code Example</title>
+   <script type="text/javascript">
+       function getQR(img) {
+           var myUrl = document.location.href;
+           var imgsrc = "http://qr4.nl/Gen.aspx?key=testkey&type=text&cont=" + myUrl;
+           img.src = imgsrc;
+       }
+    </script>
+</head>
+<body onload="javascript:getQR(myimage);">
+    <img alt="" id="myimage" name="myimage" src="" />
+</body>
+</html>
