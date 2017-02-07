@@ -13,9 +13,13 @@
     <div class="jumbotron">
       <div class="container">
         <h1>DrinkUp!</h1>
+          <button class="btn btn-danger" ng-click="getDetail($event)">Get Detail</button>
+        </form>
+        
          <li class="list-unstyled" ng-repeat="cocktail in cocktail">
-        <p>{{cocktail.strDrink}}</p>
-        <p>{{cocktail.strCategory}}</p>
+        <p>{{cocktail.strDrink}}</p><p>
+    {{cocktail.strCategory}}</p>  
+
         <p>{{cocktail.strAlcoholic}}</p>
         <p>{{cocktail.strGlass}}</p>
         <p>{{cocktail.strInstructions}}</p>
@@ -29,6 +33,7 @@
 
    </body>
 
-  <script src='detailcontroller.js'></script>
+  <script src='detailController.js'></script>
+    <script src='detailFactory.js'></script>
   
 </html>

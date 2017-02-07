@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="en" ng-app="myCocktailApp">
+<head>
+  <meta charset="UTF-8">
+  <title>MixingBad</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <!-- nav bar begins -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/">Brand</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="app-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/alcoholics">Alcoholic<span class="sr-only"></span></a></li>
+          <li><a href="#/noAlcoholics">No Alcoholic</a></li>
+        </ul>
+      
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- navbar end -->
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <!-- <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Go!</button>
+        </span> -->
+        <input ng-model="userInput" type="text" class="form-control" placeholder="Search for...">
+      </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+  </div>
+<!-- Latest compiled and minified JS -->
+  <select name="" id="">
+    <option value="alcoholicDrinks">Alcoholic</option>
+    <option value="noAlcoholicDrinks">No Alcoholic</option>
+  </select>
+  <div class="container" >
+    <div class="row" >
+      <main ng-view></main>
+      <!-- <ul class="list-group">
+        <li ng-repeat="drink in alcoholicDrinks | filter:userInput" type="button" class="list-group-item list-inline col-md-4">{{drink.strDrink}}</li>
+      </ul> -->
+    </div>
+  </div>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="js/myCocktailApp.js"></script>
+<script src="js/factories/CocktailFactory.js"></script>
+<script src="js/factories/DetailFactory.js"></script>
+<script src="js/controllers/AlcoholicController.js"></script>
+<script src="js/controllers/DetailController.js"></script>
+<script src="js/config.js"></script>  
+
+
+</body>
+</html>
+=======
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mixin Bad</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <head>
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">Search by ingredient</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+            <div class="logo">
+                <img src="img/logo.png" class="center-block" alt="" width="180px">
+            </div>
+            <div class="buscador center-block">
+                <label class="">Search a cocktail:
+                    <input type="text" id="search">
+                </label>
+            </div>
+        </head>
+        <section>
+            <div class="dataDrink  center-block"><ng-view></ng-view></div>
+        </section>
+        <footer>
+            <ul class="nav navbar-nav pull-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">Search by ingredient</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
+>>>>>>> 9127b84a5209c6a6d75f0ce93db5dedf3d750886

@@ -1,8 +1,2 @@
 angular.module('myCocktailApp', ['ngRoute'])
 
-
- 
-
-
-
-
