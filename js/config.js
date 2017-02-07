@@ -2,6 +2,10 @@
 
   .config(function ($routeProvider) {
     $routeProvider
+      .when('/', {
+        templateUrl: 'templates/displayList.html',
+        controller: 'AlcoholicDrinks'
+      })
       .when('/alcoholics', {
         templateUrl: 'templates/displayList.html',
         controller: 'AlcoholicDrinks'
