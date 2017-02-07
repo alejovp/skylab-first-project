@@ -1,0 +1,29 @@
+* {
+    border: 1px solid red;
+}
+
+.buscador {
+    width: 27%;
+    margin: 10px auto;
+}
+
+.logo {
+    background-color: white;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+.dataDrink {
+    width: 70%;
+    background-color: white;
+    height: 300px;
+    -webkit-border-radius: 15px 0 15px 0;
+    border-radius: 15px 0 15px 0;
+    color: black;
+}
+footer{
+	margin-top: 10px;
+}
