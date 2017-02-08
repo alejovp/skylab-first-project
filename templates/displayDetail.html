@@ -1,14 +1,18 @@
-<div class="jumbotron">
+<div class="templateDrink">
     <div class="container">
-        <h1>DrinkUp!</h1>
-        <!-- <button class="btn btn-danger" ng-click="getDetail($event)">Get Detail</button> --> 
-         <li class="list-unstyled" ng-repeat="cocktail in cocktail">
-            <p>{{cocktail.strDrink}}</p>
-            <p>{{cocktail.strCategory}}</p>
-            <p>{{cocktail.strAlcoholic}}</p>
-            <p>{{cocktail.strGlass}}</p>
-            <p>{{cocktail.strInstructions}}</p>
-            <p>{{cocktail.strIngredient1}} : {{cocktail.strMeasure1}}</p>
-        </li>
+        <!-- <button class="btn btn-danger" ng-click="getDetail($event)">Get Detail</button> -->
+        <div class="row">
+            <div ng-repeat="cocktail in cocktail">
+                <h1>{{cocktail.strDrink}}</h1>
+                <img ng-src="{{cocktail.strDrinkThumb}}" alt="" class="imgClass col-md-4">
+                <div class="info pull-col-md-4">
+                    <p>{{cocktail.strCategory}}</p>
+                    <p>{{cocktail.strAlcoholic}}</p>
+                    <p>{{cocktail.strGlass}}</p>
+                    <div width="100px">{{cocktail.strInstructions}}</div>
+                    <p>{{cocktail.strIngredient1}} : {{cocktail.strMeasure1}}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
