@@ -1,12 +1,12 @@
 <div class="row">
     <div class="col-lg-6">
-      <div class="input-group">
-        <input ng-model="userInput" type="text" class="form-control" placeholder="Search for...">
-      </div>
+        <div class="input-group">
+            <input ng-model="userInput" type="text" class="form-control" placeholder="Search for...">
+        </div>
     </div>
 </div>
-    <div ng-repeat="drink in drinksList | filter:userInput" >
-      <!-- <p>{{ drink.strDrink }}</p> -->
-      <button class="btn btn-primary btn-lg pull-left" ng-click=goToDetails(drink.idDrink)>{{ drink.strDrink }}</button>
+<div class="ingrdientCard pull-left">
+    <div ng-repeat="drink in drinksList | filter:userInput">
+        <button class="btn btn-primary btn-lg" ng-click=goToDetails(drink.idDrink)>{{ drink.strDrink }}</button>
     </div>
-
+</div>

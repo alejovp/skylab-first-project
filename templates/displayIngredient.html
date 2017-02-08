@@ -1,18 +1,15 @@
 <div class="row">
-    <div class="col-lg-6 ">
-      <div class="input-group">
+    <div class="input-group pull-right">
         <input ng-model="ingredient" type="text" class="form-control" placeholder="Write an ingredient...">
         <button class="btn btn-default" ng-click="searchIngredient(ingredient)">Search</button>
-      </div>
-      <button class="btn btn-default" ng-click="searchIngredient('vodka')">vodka</button>
-         <button class="btn btn-default" ng-click="searchIngredient('gin')">gin</button>
-          <button class="btn btn-default" ng-click="searchIngredient('rum')">rum</button>
-           <button class="btn btn-default" ng-click="searchIngredient('whisky')">whisky</button>
     </div>
+    <div>
+        <button class="btn btn-default" ng-click="searchIngredient('vodka')">vodka</button>
+        <button class="btn btn-default" ng-click="searchIngredient('gin')">gin</button>
+        <button class="btn btn-default" ng-click="searchIngredient('rum')">rum</button>
+        <button class="btn btn-default" ng-click="searchIngredient('whisky')">whisky</button>
+    </div>
+<div ng-repeat="drink in drinksList" type="button" class="list-group-item list-inline pull-left">
+    <button class="btn btn-primary btn-lg " id="btnStyle" ng-click=goToDetails(drink.idDrink)>{{ drink.strDrink }}</button>
 </div>
-<ul class="list-group">
-    <li ng-repeat="drink in drinksList" type="button" class="list-group-item list-inline col-md-12">
-      <!-- <p>{{ drink.strDrink }}</p> -->
-      <button class="btn btn-primary btn-lg" ng-click=goToDetails(drink.idDrink)>{{ drink.strDrink }}</button>
-    </li>
-</ul>
+</div>
