@@ -27,7 +27,7 @@
         controller: 'randomController'
       })
       .when('/ingredient', {
-          templateUrl: 'templates/displayIngredient.html',
-          controller: 'IngredientController'
+        templateUrl: 'templates/displayIngredient.html',
+        controller: 'IngredientController'
       })
   })
