@@ -7,4 +7,3 @@ angular.module('myCocktailApp')
           console.log(response.data.drinks)
         })
   })
-
