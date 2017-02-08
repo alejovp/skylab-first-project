@@ -4,8 +4,8 @@
     $routeProvider
 
       .when('/', {
-        templateUrl: 'templates/displayList.html',
-        controller: 'AlcoholicDrinks'
+        templateUrl: 'templates/displayDetail.html',
+        controller: 'randomController'
       })
 
       .when('/alcoholics', {
@@ -14,7 +14,7 @@
       })
 
       .when('/noAlcoholics', {
-        template: '<ul class="list-group"><li ng-repeat="drink in drinksList | filter:userInput" type="button" class="list-group-item list-inline col-md-4">{{drink.strDrink}}</li></ul>',
+        template: 'templates/displayList.html',
         controller: 'NoAlcoholicsDrinks'
       })
 
@@ -22,8 +22,8 @@
         templateUrl: 'templates/displayDetail.html',
         controller: 'DetailController'
       })
-      // .when('/alcoholics', {
-      //   template: '<ul class="list-group"><li ng-repeat="drink in drinksList | filter:userInput" type="button" class="list-group-item list-inline col-md-4">{{drink.strDrink}}</li></ul>',
-      //   controller: 'AlcoholicDrinks'
-      // })
+      .when('/random', {
+        template: 'templates/displayDetail.html',
+        controller: 'randomController'
+      })
   })

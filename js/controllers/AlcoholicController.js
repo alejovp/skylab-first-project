@@ -12,7 +12,7 @@
     }
   })
 
-   .controller('NoAlcoholicsDrinks', function ($scope, CocktailFactory) {
+   .controller('NoAlcoholicsDrinks', function ($scope, $location, CocktailFactory) {
      CocktailFactory.getNoAlcoholicDrinks()
       .then(function (response) {
         $scope.drinksList = response.data.drinks
