@@ -1,6 +1,6 @@
-/** {
+* {
     border: 1px solid red;
-}*/
+}
 
 .buscador {
     width: 27%;
@@ -10,29 +10,55 @@
 .logo {
     background-color: white;
 }
-.templateDrink{
+
+.templateDrink {
     background-color: #000;
     color: white
 }
+
+#btnStyle {
+    -webkit-border-radius: 0 25px 0 25px;
+    border-radius: 0 25px 0 25px;
+}
+.input-group{
+    text-align: center;
+}
+.list-group-item{
+    background-color: #393939;
+    border: 0px;
+}
+.input-group .form-control{
+    width: 70%;
+}
+.row{
+    margin: 0px;
+}
 .imgClass{
-    /*width: 66%;*/
+    width: 300px;
 }
-.info{    
-    /*width: 34%;*/
+h1.ng-binding{
+    width: 70%;
 }
+div.ng-scope{
+    position: relative;
+}
+
 body {
     background-color: #000;
     color: white;
 }
 
-section.dataDrink {
-    width: 70%;
+#dataDrink {
+    margin-top: 10px; 
+    width: 100%;
     background-color: white;
-    height: 300px;
+    height: 400px;
     -webkit-border-radius: 15px 0 15px 0;
     border-radius: 15px 0 15px 0;
     color: black;
+    overflow: auto;
 }
-footer{
-	margin-top: 10px;
+
+footer {
+    margin-top: 10px;
 }
