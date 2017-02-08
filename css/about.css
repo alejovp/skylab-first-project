@@ -1,38 +1,6 @@
 /** {
     border: 1px solid red;
 }*/
-
-.buscador {
-    width: 27%;
-    margin: 10px auto;
-}
-
-.logo {
-    background-color: white;
-}
-.templateDrink{
-    background-color: #000;
-    color: white
-}
-.imgClass{
-    /*width: 66%;*/
-}
-.info{    
-    /*width: 34%;*/
-}
-body {
-    background-color: #000;
-    color: white;
-}
-
-section.dataDrink {
-    width: 70%;
-    background-color: white;
-    height: 300px;
-    -webkit-border-radius: 15px 0 15px 0;
-    border-radius: 15px 0 15px 0;
-    color: black;
-}
-footer{
-	margin-top: 10px;
+.offices{    
+    background-image: url("http://s-ec.bstatic.com/images/hotel/840x460/606/60675696.jpg");
 }
