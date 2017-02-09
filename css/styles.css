@@ -60,3 +60,46 @@ body {
 footer {
     margin-top: 10px;
 }
+/*card*/
+    .card {
+        font-family: 'Pangolin', cursive;
+        background-color: rgba(197, 184, 255, 0.5);
+        color: rgba(197, 184, 255, 0.5);
+        padding: 10px;
+        color: black;
+        -webkit-border-radius: 50px 0 50px 0;
+        border-radius: 50px 0 50px 0;
+        height: 380px;
+    }
+    
+    .card .titleCard {}
+    
+    .card .titleCard h1 {}
+    
+    .card .dataCard col-xs-12 {
+        height: 300px;
+    }
+    
+    .card .dataCard col-xs-12 .imgCard {}
+    
+    .card .dataCard col-xs-12 .imgCard .img-circle {}
+    
+    .card .dataCard col-xs-12 .description {}
+    
+    .card .dataCard col-xs-12 .description p {}
+    
+    .card .dataCard col-xs-12 .description .instuctionsCard {}
+    
+    .card .dataCard col-xs-12 .mesurementsCard {}
+    
+    .card .dataCard col-xs-12 .mesurementsCard .ingredientsCard {}
+    
+    .card .dataCard col-xs-12 .mesurementsCard .ingredientsCard h2 {}
+    
+    .card .dataCard col-xs-12 .mesurementsCard .ingredientsCard p {}
+    
+    .card .dataCard col-xs-12 .mesurementsCard .measureCard {}
+    
+    .card .dataCard col-xs-12 .mesurementsCard .measureCard h2 {}
+    
+    .card .dataCard col-xs-12 .mesurementsCard .measureCard p {}
