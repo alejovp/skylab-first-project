@@ -1,3 +1,4 @@
+(function(){
 angular.module('myCocktailApp')
 
   .factory('RandomFactory', function ($http) {
@@ -9,3 +10,4 @@ angular.module('myCocktailApp')
       getRandom: getRandom
     }
   })
+})()

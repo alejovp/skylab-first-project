@@ -1,3 +1,4 @@
+(function(){
 angular.module('myCocktailApp')
 
   .controller('randomController', function ($scope, RandomFactory) {
@@ -24,3 +25,4 @@ angular.module('myCocktailApp')
         console.log(aMeasure)
       })
   })
+})()

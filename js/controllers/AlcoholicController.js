@@ -1,3 +1,4 @@
+(function(){
   angular.module('myCocktailApp')
 
   .controller('AlcoholicDrinks', function ($scope, $location, CocktailFactory) {
@@ -23,3 +24,4 @@
        $location.path('/drink/' + id)
      }
    })
+})()

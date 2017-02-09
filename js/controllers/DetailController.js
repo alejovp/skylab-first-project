@@ -1,3 +1,4 @@
+(function(){
 angular.module('myCocktailApp')
 
 .controller('DetailController', function ($scope, DetailFactory, $routeParams) {
@@ -23,3 +24,4 @@ angular.module('myCocktailApp')
       console.log(aIngAndMeasure)
     })
 })
+})()

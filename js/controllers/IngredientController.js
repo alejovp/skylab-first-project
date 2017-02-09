@@ -1,3 +1,4 @@
+  (function(){
   angular.module('myCocktailApp')
 
   .controller('IngredientController', function($scope, $location, IngredientFactory) {
@@ -16,3 +17,4 @@
           }
       }
   })
+})()
