@@ -2,7 +2,7 @@
   angular.module('myCocktailApp')
 
   .controller('AlcoholicDrinks', function ($location, CocktailFactory) {
-    var vm = .this
+    var vm = this
     CocktailFactory.getAlcoholicDrinks()
       .then(function (response) {
         vm.drinksList = response.data.drinks
@@ -15,7 +15,7 @@
   })
 
    .controller('NoAlcoholicsDrinks', function ($location, CocktailFactory) {
-     var vm = .this
+     var vm = this
      CocktailFactory.getNoAlcoholicDrinks()
       .then(function (response) {
         vm.drinksList = response.data.drinks

@@ -5,32 +5,35 @@
 
       .when('/', {
         templateUrl: 'templates/displayDetail.html',
-        controller: 'randomController'
+        controller: 'randomController',
+        controllerAs: 'vm'
       })
 
       .when('/alcoholics', {
         templateUrl: 'templates/displayList.html',
-        controller: 'AlcoholicDrinks'
+        controller: 'AlcoholicDrinks',
         controllerAs: 'vm'
       })
 
       .when('/noAlcoholics', {
         template: 'templates/displayList.html',
-        controller: 'NoAlcoholicsDrinks'
+        controller: 'NoAlcoholicsDrinks',
       controllerAs: 'vm'
       })
 
       .when('/drink/:id', {
         templateUrl: 'templates/displayDetail.html',
-        controller: 'DetailController'
+        controller: 'DetailController',
         controllerAs: 'vm'
       })
       .when('/random', {
         template: 'templates/displayDetail.html',
-        controller: 'randomController'
+        controller: 'randomController',
+        controllerAs: 'vm'
       })
       .when('/ingredient', {
         templateUrl: 'templates/displayIngredient.html',
-        controller: 'IngredientController'
+        controller: 'IngredientController',
+        controllerAs: 'vm'
       })
   })
