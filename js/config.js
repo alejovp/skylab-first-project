@@ -27,7 +27,7 @@
         controllerAs: 'vm'
       })
       .when('/random', {
-        template: 'templates/displayDetail.html',
+        templateUrl: 'templates/displayDetail.html',
         controller: 'randomController',
         controllerAs: 'vm'
       })
