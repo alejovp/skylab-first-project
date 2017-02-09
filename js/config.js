@@ -36,4 +36,9 @@
         controller: 'IngredientController',
         controllerAs: 'vm'
       })
+            .when('/about', {
+        templateUrl: 'templates/about.html',
+        controller: 'AboutController',
+        controllerAs: 'vm'
+      })
   })
