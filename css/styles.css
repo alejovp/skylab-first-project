@@ -56,7 +56,9 @@ body {
 #dataDrink > main{
     padding: 13px;
 }
-
+#mmMainContainer > div > div > div.swiper-slide.swiper-slide-visible.swiper-slide-active > a > div > img {
+    width: 100px;
+}
 footer {
     margin-top: 10px;
 }
