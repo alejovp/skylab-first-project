@@ -2,6 +2,7 @@
 angular.module('myCocktailApp')
 
 .controller('DetailController', function (DetailFactory, $routeParams) {
+  var vm = this
   DetailFactory.getDetail($routeParams.id)
     .then(function (response) {
       var resultDrink = response.data.drinks[0]
