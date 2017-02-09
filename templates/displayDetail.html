@@ -12,11 +12,11 @@
                     <div>{{cocktail.strInstructions}}</div>
                     <div class="col-md-2">
                         <h5>Ingredient</h5>
-                        <p ng-repeat="ingredient in ingredients">{{ingredient}}</p>
+                        <p ng-repeat="ingredient in ingAndMeasures">{{ingredient[0]}}</p>
                     </div>
                     <div class="col-md-2">
                         <h5>Measure</h5>
-                        <p ng-repeat="measure in measures">{{measure}}</p>
+                        <p ng-repeat="ingredient in ingAndMeasures">{{ingredient[1]}}</p>
                     </div>  
                 </div>
             </div>

@@ -8,16 +8,15 @@ angular.module('myCocktailApp')
       console.log(response.data.drinks)
 
       // Push the ingredients and measures into an Array
-      var aIngredient = []
-      var aMeasure = []
+      var aIngAndMeasure = []
       for (var i = 1; i < 15; i++) {
         if (resultDrink['strIngredient' + i]) {
-          aIngredient.push(resultDrink['strIngredient' + i])
-          aMeasure.push(resultDrink['strMeasure' + i])
+          aIngAndMeasure.push([resultDrink['strIngredient' + i], resultDrink['strMeasure' + i]])
         }
       }
 
-      $scope.ingredients = aIngredient
-      $scope.measures = aMeasure
+      $scope.ingAndMeasures = aIngAndMeasure
+
+      console.log(aIngAndMeasure)
     })
 })
