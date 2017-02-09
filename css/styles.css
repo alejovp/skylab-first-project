@@ -1,6 +1,6 @@
-* {
+/** {
     border: 1px solid red;
-}
+}*/
 
 .buscador {
     width: 27%;
@@ -42,14 +42,19 @@ body {
 }
 
 #dataDrink {
-    margin-top: 10px; 
-    width: 100%;
+    margin-top: 10px;
+    width: 100%; 
     background-color: white;
+    color: black;
     height: 400px;
     -webkit-border-radius: 15px 0 15px 0;
     border-radius: 15px 0 15px 0;
     color: black;
-    overflow: auto;
+    overflow-y: scroll;
+    padding: 10px 50px;
+}
+#dataDrink > main{
+    padding: 13px;
 }
 
 footer {
