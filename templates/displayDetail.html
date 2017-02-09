@@ -3,20 +3,20 @@
         <!-- <button class="btn btn-danger" ng-click="getDetail($event)">Get Detail</button> -->
         <div class="row">
             <div>
-                <h3>{{cocktail.strDrink}}</h3>
-                <img ng-src="{{cocktail.strDrinkThumb}}" alt="" class="imgClass col-md-4">
+                <h3>{{vm.cocktail.strDrink}}</h3>
+                <img ng-src="{{vm.cocktail.strDrinkThumb}}" alt="" class="imgClass col-md-4">
                 <div class="info col-md-4 pull-left">
-                    <p>{{cocktail.strCategory}}</p>
-                    <p>{{cocktail.strAlcoholic}}</p>
-                    <p>{{cocktail.strGlass}}</p>
-                    <div>{{cocktail.strInstructions}}</div>
+                    <p>{{vm.cocktail.strCategory}}</p>
+                    <p>{{vm.cocktail.strAlcoholic}}</p>
+                    <p>{{vm.cocktail.strGlass}}</p>
+                    <div>{{vm.cocktail.strInstructions}}</div>
                     <div class="col-md-2">
                         <h5>Ingredient</h5>
-                        <p ng-repeat="ingredient in ingAndMeasures">{{ingredient[0]}}</p>
+                        <p ng-repeat="ingredient in vm.ingAndMeasures">{{ingredient[0]}}</p>
                     </div>
                     <div class="col-md-2">
                         <h5>Measure</h5>
-                        <p ng-repeat="ingredient in ingAndMeasures">{{ingredient[1]}}</p>
+                        <p ng-repeat="ingredient in vm.ingAndMeasures">{{ingredient[1]}}</p>
                     </div>  
                 </div>
             </div>
