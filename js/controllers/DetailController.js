@@ -4,6 +4,9 @@ angular.module('myCocktailApp')
   DetailFactory.getDetail($routeParams.id)
     .then(function (response) {
       var resultDrink = response.data.drinks[0]
+       if (resultDrink.strDrinkThumb === null){
+            resultDrink.strDrinkThumb = '../img/noImage.png'
+          }
       $scope.cocktail = resultDrink
       console.log(response.data.drinks)
 
