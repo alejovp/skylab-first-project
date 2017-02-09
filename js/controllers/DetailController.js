@@ -1,10 +1,15 @@
+(function(){
 angular.module('myCocktailApp')
 
-.controller('DetailController', function ($scope, DetailFactory, $routeParams) {
+.controller('DetailController', function (DetailFactory, $routeParams) {
+  var vm = this
   DetailFactory.getDetail($routeParams.id)
     .then(function (response) {
       var resultDrink = response.data.drinks[0]
-      $scope.cocktail = resultDrink
+       if (resultDrink.strDrinkThumb === null){
+            resultDrink.strDrinkThumb = '../img/noImage.png'
+          }
+      vm.cocktail = resultDrink
       console.log(response.data.drinks)
 
       // Push the ingredients and measures into an Array
@@ -15,8 +20,9 @@ angular.module('myCocktailApp')
         }
       }
 
-      $scope.ingAndMeasures = aIngAndMeasure
+      vm.ingAndMeasures = aIngAndMeasure
 
       console.log(aIngAndMeasure)
     })
 })
+})()

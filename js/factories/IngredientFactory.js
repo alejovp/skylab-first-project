@@ -1,3 +1,4 @@
+(function(){
 angular.module('myCocktailApp')
 
 .factory('IngredientFactory', function ($http) {
@@ -13,3 +14,4 @@ angular.module('myCocktailApp')
     getByIngredient: getByIngredient,
   }
 })
+})()

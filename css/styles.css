@@ -30,18 +30,11 @@
 .input-group .form-control{
     width: 70%;
 }
-.row{
-    margin: 0px;
-}
+
 .imgClass{
     width: 300px;
 }
-h1.ng-binding{
-    width: 70%;
-}
-div.ng-scope{
-    position: relative;
-}
+
 
 body {
     background-color: #000;

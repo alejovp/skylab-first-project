@@ -6,7 +6,7 @@
     </div>
 </div>
 <div class="ingrdientCard pull-left">
-    <div ng-repeat="drink in drinksList | filter:userInput">
+    <div ng-repeat="drink in vm.drinksList | filter:userInput">
         <button class="btn btn-primary btn-lg" ng-click=goToDetails(drink.idDrink)>{{ drink.strDrink }}</button>
     </div>
 </div>

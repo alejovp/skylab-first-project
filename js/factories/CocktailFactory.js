@@ -1,3 +1,4 @@
+(function(){
 angular.module('myCocktailApp')
 
 .factory('CocktailFactory', function ($http) {
@@ -16,3 +17,4 @@ angular.module('myCocktailApp')
     getNoAlcoholicDrinks: getNoAlcoholicDrinks
   }
 })
+})()

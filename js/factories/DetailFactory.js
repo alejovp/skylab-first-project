@@ -1,3 +1,4 @@
+(function(){
   angular.module('myCocktailApp')
 
   .factory('DetailFactory', function ($http) {
@@ -11,3 +12,4 @@
       getDetail: getDetail
     }
   })
+})()
