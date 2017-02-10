@@ -1,10 +1,10 @@
-            <div class="card col-xs-12 col-md-12">
+            <div class="card col-xs-12 col-md-12 clearfix">
                 <div class="titleCard col-md-12 center-block">
-                    <h1 class="text-center">{{vm.cocktail.strDrink}}</h1>
+                    <h1 class="text-right">{{vm.cocktail.strDrink}}</h1>
                 </div>
-                <div class="dataCard col-xs-12 col-md-12">
-                    <div class="imgCard col-xs-12 col-md-4">
-                        <img ng-src="{{vm.cocktail.strDrinkThumb}}" alt="" with="300px" height="300px" class="img-responsive img-circle">
+                <div class="dataCard col-xs-12 col-md-12 ">
+                    <div class="imgCard col-xs-10 col-md-4">
+                        <img id="miImg" ng-src="{{vm.cocktail.strDrinkThumb}}" alt="" with="300px" height="300px" class="img-circle">
                     </div>
                     <div class="description col-md-4">
                         <p>{{vm.cocktail.strCategory}}</p>
