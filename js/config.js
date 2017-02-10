@@ -16,7 +16,7 @@
       })
 
       .when('/noAlcoholics', {
-        template: 'templates/displayList.html',
+        templateUrl: 'templates/displayList.html',
         controller: 'NoAlcoholicsDrinks',
         controllerAs: 'vm'
       })
@@ -36,7 +36,7 @@
         controller: 'IngredientController',
         controllerAs: 'vm'
       })
-            .when('/about', {
+      .when('/about', {
         templateUrl: 'templates/about.html',
         controller: 'AboutController',
         controllerAs: 'vm'
