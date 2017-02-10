@@ -5,7 +5,7 @@ Metro Menu (Solid bar)
 #mmMainContainer{
 	font-family: 'Segoe UI', Tahoma, Helvetica, Sans-Serif !important;
 	color: white;
-	background-color: ;
+	background-color: transparent!important;
 	z-index: 9999;
 	color: white;
 	opacity: 100;
@@ -191,11 +191,13 @@ Metro Menu (Solid bar)
 /* ================================== 
 	Tooltip
  ================================== */
+.mmToolTipBox.mmTtTop{
+	background-color: #000!important;
+}
 .mmToolTipBox{
 	font-family: 'Segoe UI', Tahoma, Helvetica, Sans-Serif !important;
 	color: white;
 	position: fixed;
-	background-color:transparent;
 	z-index: 999;
 	padding: 10px;
 	width: 350px;
@@ -203,8 +205,8 @@ Metro Menu (Solid bar)
 }
 
 .mmTtTop{
-	top: 100px;
-	right: 50%;
+	top: 10px;
+	left: 10px;
 }
 
 .mmTtBottom{

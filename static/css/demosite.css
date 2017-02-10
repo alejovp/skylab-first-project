@@ -102,7 +102,7 @@ p{
 }
 
 .purpBox{
-	background-color: #92278f;
+	background-color: transparent;
 }
 
 .greenBox{
@@ -230,8 +230,5 @@ button{
 	position: fixed;
 	bottom: 100px;
 	left: 20px;
-
-}
-
 
 }
