@@ -13,16 +13,9 @@
     border-radius: 0 25px 0 25px;
 }
 
-
 .input-group {
     text-align: center;
 }
-
-
-/*.list-group-item{
-    background-color: #393939;
-    border: 0px;
-}*/
 
 .input-group .form-control {
 
@@ -39,10 +32,7 @@ body {
     background-image: url(../img/cocktails.jpg);
 }
 
-
 .swiper-container {
-    /*background-color: #000;*/
-
     color: white;
 }
 
@@ -154,4 +144,8 @@ footer {
 .swiper-slide{
     background-color: transparent!important;
     
+}
+
+#home {
+    color: white;
 }
