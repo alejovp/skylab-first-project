@@ -34,6 +34,7 @@ body {
 }
 .swiper-container{
     /*background-color: #000;*/
+    padding-top: 10px;
     background-image: url(../img/cocktails.jpg);
 }
 #dataDrink {
