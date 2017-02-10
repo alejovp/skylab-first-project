@@ -13,7 +13,7 @@
     border-radius: 0 25px 0 25px;
 }
 
-<<<<<<< HEAD
+
 .input-group {
     text-align: center;
 }
@@ -25,13 +25,12 @@
 }*/
 
 .input-group .form-control {
-=======
-.input-group{
+
     text-align: center;
 }
 
 .input-group .form-control{
->>>>>>> 749400b775cb36605ddcc6bfcaa615ad416d7dd9
+
     width: 70%;
 }
 
@@ -40,16 +39,15 @@ body {
     background-image: url(../img/cocktails.jpg);
 }
 
-<<<<<<< HEAD
+
 .swiper-container {
     /*background-color: #000;*/
-=======
-#home {
+
     color: white;
 }
 
 .swiper-container{
->>>>>>> 749400b775cb36605ddcc6bfcaa615ad416d7dd9
+
     padding-top: 10px;
     background-image: url(../img/cocktails.jpg);
 }
@@ -69,13 +67,10 @@ body {
     padding: 10px 100px;
 }
 
-<<<<<<< HEAD
 #dataDrink > main {}
 
 div.list-group-item {
-=======
-div.list-group-item{
->>>>>>> 749400b775cb36605ddcc6bfcaa615ad416d7dd9
+
     background-color: transparent;
     width: auto;
     border: 0px solid transparent;
