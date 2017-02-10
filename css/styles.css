@@ -1,6 +1,6 @@
-* {
+/** {
     border: 1px solid red;
-}
+}*/
 
 .buscador {
     width: 27%;
@@ -8,7 +8,8 @@
 }
 
 .logo {
-    background-color: white;
+    background-color: rgba(197, 184, 255, 0.5);
+        color: rgba(197, 184, 255, 0.5);
 }
 
 #btnStyle {
@@ -18,33 +19,45 @@
 .input-group{
     text-align: center;
 }
-.list-group-item{
+/*.list-group-item{
     background-color: #393939;
     border: 0px;
-}
+}*/
 .input-group .form-control{
     width: 70%;
 }
 
 
 body {
-    background-color: #000;
     color: white;
-    background-image: url(img/cocktails.jpg);
+    background-image: url(../img/cocktails.jpg);
 }
-
+.swiper-container{
+    /*background-color: #000;*/
+    padding-top: 10px;
+    background-image: url(../img/cocktails.jpg);
+}
 #dataDrink {
     color: black;
     height: 450px;
     -webkit-border-radius: 50px 0 50px 0;
     border-radius: 50px 0 50px 0;
     color: black;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
-    padding: 10px 50px;
+    padding: 10px;
+}
+.miNav{
+    padding: 10px 100px;
 }
 #dataDrink > main{
-    background-image: url(img/cocktails.jpg);
+
+}
+div.list-group-item{
+    background-color: transparent;
+    width:auto;
+    border: 0px solid transparent;
+    padding: 5px;
 }
 
 footer {
@@ -59,7 +72,11 @@ footer {
         color: black;
         -webkit-border-radius: 50px 0 50px 0;
         border-radius: 50px 0 50px 0;
-        height: 280px;
+        height: 380px;
+        top: 25px;
+        position: relative;
+
+        
     }
     
     .card .titleCard {}
@@ -67,13 +84,13 @@ footer {
     .card .titleCard h1 {}
     
     .card .dataCard col-xs-12 {
-        height: 200px;
+        height: 175px;
     }
     
     .card .dataCard col-xs-12 .imgCard {}
     
-    .card .dataCard col-xs-12 .imgCard .img-circle {}
-    
+
+
     .card .dataCard col-xs-12 .description {}
     
     .card .dataCard col-xs-12 .description p {}
@@ -93,3 +110,6 @@ footer {
     .card .dataCard col-xs-12 .mesurementsCard .measureCard h2 {}
     
     .card .dataCard col-xs-12 .mesurementsCard .measureCard p {}
+    .ingredientsCard{
+
+    }

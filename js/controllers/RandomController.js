@@ -7,7 +7,7 @@
       .then(function (response) {
         var resultDrink = response.data.drinks[0]
         if (resultDrink.strDrinkThumb === null) {
-          resultDrink.strDrinkThumb = 'img/noImage.png'
+          resultDrink.strDrinkThumb = '../img/noImage.png'
         }
         vm.cocktail = resultDrink
         console.log(response.data.drinks)
