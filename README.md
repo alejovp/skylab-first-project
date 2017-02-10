@@ -20,4 +20,4 @@ We use the [Cocktail db](http://www.thecocktaildb.com) api as the data source fo
 - Random Me!: if you are not sure about what cocktail do you want here you can pick a random cocktail recipe.
 
 ###Instructions:
-In order to run this app in your browser first you need to make a ´bower install´ from your terminal.
+In order to run this app in your browser first you need to make a `bower install` from your terminal.
