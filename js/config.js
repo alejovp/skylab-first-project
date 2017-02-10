@@ -4,7 +4,7 @@
     $routeProvider
 
       .when('/', {
-        templateUrl: 'templates/home.html',
+        templateUrl: 'templates/home.html'
         // controller: 'randomController',
         // controllerAs: 'vm'
       })
@@ -16,9 +16,9 @@
       })
 
       .when('/noAlcoholics', {
-        template: 'templates/displayList.html',
+        templateUrl: 'templates/displayList.html',
         controller: 'NoAlcoholicsDrinks',
-      controllerAs: 'vm'
+        controllerAs: 'vm'
       })
 
       .when('/drink/:id', {
@@ -36,7 +36,7 @@
         controller: 'IngredientController',
         controllerAs: 'vm'
       })
-            .when('/about', {
+      .when('/about', {
         templateUrl: 'templates/about.html',
         controller: 'AboutController',
         controllerAs: 'vm'
