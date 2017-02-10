@@ -6,10 +6,10 @@ We use the [Cocktail db](http://www.thecocktaildb.com) api as the data source fo
 ---
 
 [![Skylab](img/tech logos/skylab-56.png)](http://www.skylabcoders.com/)
- [![AngularJS](img/tech logos/angularjs.png)](https://angularjs.org/)
- [![HTML5, CSS3 and JS](img/tech logos/html5-css3-js.png)](https://www.w3.org/)
- [![Bootstrap](img/tech logos/bootstrap.png)](http://getbootstrap.com/)  
- [![Bower](img/tech logos/bower.png)](https://bower.io//)
+[![AngularJS](img/tech logos/angularjs.png)](https://angularjs.org/)
+[![HTML5, CSS3 and JS](img/tech logos/html5-css3-js.png)](https://www.w3.org/)
+[![Bootstrap](img/tech logos/bootstrap.png)](http://getbootstrap.com/)  
+[![Bower](img/tech logos/bower.png)](https://bower.io//)
 
 ---
 
@@ -20,4 +20,4 @@ We use the [Cocktail db](http://www.thecocktaildb.com) api as the data source fo
 - Random Me!: if you are not sure about what cocktail do you want here you can pick a random cocktail recipe.
 
 ###Instructions:
-In order to run this app in your browser first you need to make a bower install from your terminal.
+In order to run this app in your browser first you need to make a ´bower install´ from your terminal.
