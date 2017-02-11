@@ -7,17 +7,42 @@
     <!-- Bower Links -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="static/css/MetroMenu.css" rel="stylesheet" type="text/css" media="screen" />
-    <!-- Font Awesome 4.0.2 -->
-    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <div class="container">
 
         <div class="logo">
-            <img src="img/logo.png" class="center-block" alt="" width="280px">
+            <a href="#!/" title="Go Home!">
+                <img src="img/logo.png" class="center-block">
+            </a>
+
         </div>
+
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#!/ingredient">Find By Ingredient</a></li>
+              <li><a href="#!/alcoholics">Alcoholic Drinks</a></li>
+              <li><a href="#!/noAlcoholics">Non Alcoholic Drinks</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#!/about">About Us</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
         </head>
             <div id="dataDrink" class="center-block">
                 <main ng-view></main>
@@ -28,11 +53,11 @@
     </div>
     <!-- Bower scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="static/js/MetroMenu.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <!-- End of Bower Scripts -->
+
     <script src="js/myCocktailApp.js"></script>
     <script src="js/factories/CocktailFactory.js"></script>
     <script src="js/factories/DetailFactory.js"></script>
@@ -43,52 +68,7 @@
     <script src="js/controllers/RandomController.js"></script>
     <script src="js/controllers/IngredientController.js"></script>
     <script src="js/config.js"></script>
-    <!-- Metro Menu JS -->
 
-
-    <script type="text/javascript">
-$(document).ready(function($){
-
-
-    $.MetroMenu( 
-        {
-            backicon: "static/img/back.png", // Sub menu back item
-            animation: "fadeInLeft",  // Animation
-            position: "bottom",  // Position
-            withtooltip: true, // Show tooltip on mouse over
-            closeonclick: false, // Menu item click, close the menu
-            escclose: true,  // ESC key, close the menu
-            items:[
-                {   name: "Home",
-                    icon: "img/265923.png",
-                    link: "#!/"
-                },
-                {   name: "Search by ingredient",
-                    icon: "img/search.png",
-                    link: "#!/ingredient"
-                },
-                {   name: "Search by alcoholics",
-                    icon: "img/search.png",
-                    link: "#!/alcoholics"
-                },
-                {   name: "Search by no Alcoholics",
-                    icon: "img/search.png",
-                    link: "#!/noAlcoholics"
-                },
-                {   name: "Random me!",
-                    icon: "img/search.png",
-                    link: "#!/random"
-                },
-                {   name: "About Us",
-                    icon: "img/search.png",
-                    link: "#!/about"
-                }]
-        }
-    );
-
-
-});
-        </script>       
 </body>
 
 </html>
