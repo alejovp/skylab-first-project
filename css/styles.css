@@ -77,7 +77,7 @@ footer {
 
 /*card*/
 
-#dataDrink > main > div:nth-child(3) > div {
+#dataDrink > main .card {
     background-color: white;
     padding: 10px;
     color: black;
