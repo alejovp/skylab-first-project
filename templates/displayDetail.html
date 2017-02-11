@@ -1,26 +1,31 @@
-            <div class="card col-xs-12 col-md-12 clearfix">
-                <div class="titleCard col-md-12 center-block">
-                    <h1 class="text-right">{{vm.cocktail.strDrink}}</h1>
-                </div>
-                <div class="dataCard col-xs-12 col-md-12 ">
-                    <div class="imgCard col-xs-10 col-md-4">
-                        <img id="miImg" ng-src="{{vm.cocktail.strDrinkThumb}}" alt="" with="300px" height="300px" class="img-circle">
-                    </div>
-                    <div class="description col-md-4">
-                        <p>{{vm.cocktail.strCategory}}</p>
-                        <p>{{vm.cocktail.strAlcoholic}}</p>
-                        <p>{{vm.cocktail.strGlass}}</p>
-                        <div class="instuctionsCard">{{vm.cocktail.strInstructions}}</div>
-                    </div>
-                    <div class="mesurementsCard col-xs-12 col-md-4 ">
-                        <div class="ingredientsCard col-xs-12 col-md-6">
-                            <h5>Ingredient</h5>
-                            <p ng-repeat="ingredient in vm.ingAndMeasures">{{ingredient[0]}}</p>
-                        </div>
-                        <div class="measureCard col-xs-12 col-md-6">
-                            <h5>Measure</h5>
-                            <p ng-repeat="ingredient in vm.ingAndMeasures">{{ingredient[1]}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="card">
+
+    <h1 class="text-center">{{vm.cocktail.strDrink}}</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img ng-src="{{vm.cocktail.strDrinkThumb}}" class="img-thumbnail img-responsive">
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>Category</dt>
+                <dd>{{vm.cocktail.strCategory}}</dd>
+                <dt>Type</dt>
+                <dd>{{vm.cocktail.strAlcoholic}}</dd>
+                <dt>Glass</dt>
+                <dd>{{vm.cocktail.strGlass}}</dd>
+                <dt>Instructions</dt>
+                <dd>{{vm.cocktail.strInstructions}}</dd>
+            </dl>
+        </div>
+        <div class="col-md-4 ">
+            <h3>Ingredients & Measures</h3>
+            <ul>
+                <li ng-repeat="ingredient in vm.ingAndMeasures">
+                    <strong>{{ ingredient[0] }}</strong>
+                    <span>{{ ingredient[1] }}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

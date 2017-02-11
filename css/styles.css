@@ -18,12 +18,10 @@
 }
 
 .input-group .form-control {
-
     text-align: center;
 }
 
 .input-group .form-control{
-
     width: 70%;
 }
 
@@ -44,20 +42,12 @@ body {
 
 #dataDrink {
     color: black;
-    height: 450px;
-    -webkit-border-radius: 50px 0 50px 0;
-    border-radius: 50px 0 50px 0;
-    color: black;
-    overflow-y: auto;
-    overflow-x: hidden;
     padding: 10px;
 }
 
 .miNav {
     padding: 10px 100px;
 }
-
-#dataDrink > main {}
 
 div.list-group-item {
 
@@ -72,78 +62,39 @@ div.list-group-item {
     text-align: center;
 }
 
-footer {
-    margin-top: 10px;
-}
 
 
 /*card*/
 
-.card {
-    font-family: 'Pangolin', cursive;
-    background-color: rgba(197, 184, 255, 0.5);
-    color: rgba(197, 184, 255, 0.5);
+.card, .card h5 {
+    background-color: white;
     padding: 10px;
     color: black;
-    -webkit-border-radius: 50px 0 50px 0;
-    border-radius: 50px 0 50px 0;
-    height: 380px;
-    position: relative;
+    font-size: 20px;
+}
+
+.card .row > div {
+    padding:20px;
 
 }
 
-.card .titleCard {}
 
-.card .titleCard h1 {
+// .mmOptionContainer.mmOption {
+//     background-color: #000;
+//     -webkit-border-radius: 0 25px 0 25px;
+//     border-radius: 0 25px 0 25px;
+//     padding: 5px;
+// }
 
-}
+// .mmOptionContainer.mmOption:hover {
+//     background-color: #000031;
+//     -webkit-border-radius: 0 25px 0 25px;
+//     border-radius: 0 25px 0 25px;
+//     padding: 5px;
+// }
 
-.card .dataCard col-xs-12 {
-}
-
-.imgCard.col-xs-10{
-    position: relative;
-    margin: 10px;
-}
-
-.card .dataCard col-xs-12 .description {}
-
-.card .dataCard col-xs-12 .description p {}
-
-.card .dataCard col-xs-12 .description .instuctionsCard {}
-
-.card .dataCard col-xs-12 .mesurementsCard {}
-
-.card .dataCard col-xs-12 .mesurementsCard .ingredientsCard {}
-
-.card .dataCard col-xs-12 .mesurementsCard .ingredientsCard h2 {}
-
-.card .dataCard col-xs-12 .mesurementsCard .ingredientsCard p {}
-
-.card .dataCard col-xs-12 .mesurementsCard .measureCard {}
-
-.card .dataCard col-xs-12 .mesurementsCard .measureCard h2 {}
-
-.card .dataCard col-xs-12 .mesurementsCard .measureCard p {}
-
-.ingredientsCard {}
-
-.mmOptionContainer.mmOption {
-    background-color: #000;
-    -webkit-border-radius: 0 25px 0 25px;
-    border-radius: 0 25px 0 25px;
-    padding: 5px;
-}
-
-.mmOptionContainer.mmOption:hover {
-    background-color: #000031;
-    -webkit-border-radius: 0 25px 0 25px;
-    border-radius: 0 25px 0 25px;
-    padding: 5px;
-}
 .swiper-slide{
     background-color: transparent!important;
-    
 }
 
 #home {
