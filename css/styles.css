@@ -47,10 +47,8 @@ h2 {
 }
 
 #dataDrink {
-    background-color: white;
     padding: 10px;
     color: black;
-    font-size: 20px;
 }
 
 .miNav {
@@ -69,21 +67,17 @@ div.list-group-item {
     color: white;
     text-align: center;
 }
-<<<<<<< HEAD
+
 #mmMainContainer > div > div > div.swiper-slide.swiper-slide-visible.swiper-slide-active > a > div > img {
     width: 100px;
 }
 footer {
     margin-top: 10px;
 }
-=======
-
->>>>>>> master
-
 
 /*card*/
 
-.card {
+#dataDrink > main > div:nth-child(3) > div {
     background-color: white;
     padding: 10px;
     color: black;
@@ -102,23 +96,23 @@ footer {
 }
 
 
-// .mmOptionContainer.mmOption {
-//     background-color: #000;
-//     -webkit-border-radius: 0 25px 0 25px;
-//     border-radius: 0 25px 0 25px;
-//     padding: 5px;
-// }
+.mmOptionContainer.mmOption {
+    background-color: #000;
+    -webkit-border-radius: 0 25px 0 25px;
+    border-radius: 0 25px 0 25px;
+    padding: 5px;
+ }
 
-// .mmOptionContainer.mmOption:hover {
-//     background-color: #000031;
-//     -webkit-border-radius: 0 25px 0 25px;
-//     border-radius: 0 25px 0 25px;
-//     padding: 5px;
-// }
-
-.swiper-slide{
-    background-color: transparent!important;
+.mmOptionContainer.mmOption:hover {
+     background-color: #000031;
+     -webkit-border-radius: 0 25px 0 25px;
+     border-radius: 0 25px 0 25px;
+     padding: 5px;
 }
+
+/*.swiper-slide{
+    background-color: transparent!important;
+}*/
 
 #home {
     color: white;
