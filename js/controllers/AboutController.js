@@ -1,8 +1,11 @@
-(function(){
+(function () {
+  angular.module('myCocktailApp')
 
-angular.module('myCocktailApp')
+  .controller('AboutController', aboutController)
 
-  .controller('AboutController', function () {
-
-  })
+  function aboutController ($rootScope) {
+    var vm = this
+    vm.sectionName = 'about'
+    $rootScope.$broadcast('eventSectionName', vm.sectionName)
+  }
 })()

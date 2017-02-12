@@ -20,7 +20,7 @@
 
         </div>
 
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default" ng-controller='NavController'>
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -32,12 +32,12 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#!/ingredient">Find By Ingredient</a></li>
-              <li><a href="#!/alcoholics">Alcoholic Drinks</a></li>
-              <li><a href="#!/noAlcoholics">Non Alcoholic Drinks</a></li>
+              <li ng-class="sectionName === 'ingredient' ? 'active' : ''"><a href="#!/ingredient">Search By Ingredient</a></li>
+              <li ng-class="sectionName === 'alcoholic' ? 'active' : ''"><a href="#!/alcoholics">Alcoholic Drinks</a></li>
+              <li ng-class="sectionName === 'noAlcoholic' ? 'active' : ''"><a href="#!/noAlcoholics">Non Alcoholic Drinks</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#!/about">About Us</a></li>
+              <li ng-class="sectionName === 'about' ? 'active' : ''"><a href="#!/about">About Us</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -64,9 +64,11 @@
     <script src="js/factories/RandomFactory.js"></script>
     <script src="js/factories/IngredientFactory.js"></script>
     <script src="js/controllers/AlcoholicController.js"></script>
+    <script src="js/controllers/NavController.js"></script>
     <script src="js/controllers/DetailController.js"></script>
     <script src="js/controllers/RandomController.js"></script>
     <script src="js/controllers/IngredientController.js"></script>
+    <script src="js/controllers/AboutController.js"></script>
     <script src="js/config.js"></script>
 
 </body>
